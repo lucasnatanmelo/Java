@@ -11,7 +11,9 @@ public class Program {
 	
 	public static void main(String[] args) {
 
+		// Default setup
 		Locale.setDefault(Locale.US);
+
 		List<Product> list = new ArrayList<>();
 
 		list.add(new Product("Tv", 900.00));
@@ -22,7 +24,7 @@ public class Program {
 		ProductService ps = new ProductService();
 		
 		/*
-			There different ways to use lambda expressions
+			There are different ways to use lambda expressions
 			Those ways are mentioned in 257
 		*/
 

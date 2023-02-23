@@ -15,7 +15,7 @@ public class Program {
 		// Default setup 
 		Scanner sc = new Scanner(System.in);
 
-		// Creates a map data structure String|Integer
+		// Creates a Map data structure String|Integer
 		Map<String, Integer> votes = new LinkedHashMap<>();
 
 		// User enters with file path
@@ -38,6 +38,7 @@ public class Program {
 					int votesSoFar = votes.get(name);
 					votes.put(name, count + votesSoFar);
 				}
+				// Insert in votes new Candidate found
 				else {
 					votes.put(name, count);
 				}
@@ -45,6 +46,7 @@ public class Program {
 				line = br.readLine();
 			}
 			
+			// Loop through votes
 			for (String key : votes.keySet()) {
 				System.out.println(key + ": " + votes.get(key));
 			}

@@ -18,7 +18,7 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 
 		/*
-			There different ways to use lambda expressions
+			There are different ways to use lambda expressions
 			Those ways are mentioned in 257
 		*/
 

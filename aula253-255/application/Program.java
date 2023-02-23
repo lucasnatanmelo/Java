@@ -2,7 +2,6 @@ package application;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
 
 import entities.Product;
 
@@ -18,14 +17,17 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 
 		/*
-			There area different ways to use lambda expressions
-			Those ways are mentioned in 256 lesson 
+			There're different ways to use lambda expressions
+			Those ways are mentioned in 255 lesson - Predicate
 		*/
-		double factor = 1.1;
 		
-		// In this case, we are implementing forEach consumer
-		list.forEach(p -> p.setPrice(p.getPrice() * factor));
+		double min = 100.0;
 
-		list.forEach(System.out::println);
+		// In this case, we are implementing removeIf predicate
+		list.removeIf(p -> p.getPrice() >= min);
+
+		for (Product p : list) {
+			System.out.println(p);
+		}
 	}
 }
