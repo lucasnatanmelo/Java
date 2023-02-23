@@ -11,6 +11,7 @@ public class Account {
 		
 	}
 
+	// Constructor method
 	public Account(Integer number, String holder, Double balance) {
 		this.number = number;
 		this.holder = holder;

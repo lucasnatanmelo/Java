@@ -21,19 +21,24 @@ public class Program {
 		for(int i = 1; i <= n; i++) {
 			System.out.println();
 			System.out.println("Rent #" + i + ":");
+			
 			System.out.print("Name: ");
 			sc.nextLine();
-			
 			String name = sc.nextLine();
+			
 			System.out.print("Email: ");
-			
 			String email = sc.next();
+
 			System.out.print("Room: ");
-			
 			int roomNumber = sc.nextInt();
-			vect[roomNumber] = new Rent(name, email);
+
+			if(vect[roomNumber] != null) {
+				System.out.println("This room is already rented " + vect[roomNumber]);
+				i--;
+			} else {
+				vect[roomNumber] = new Rent(name, email);
+			}
 		}
-		
 		
 		for(int i = 1; i <= vect.length - 1 ; i++) {
 			System.out.println(vect[i] != null ? (i + " : " + vect[i]) : (i + " room is not busy"));   

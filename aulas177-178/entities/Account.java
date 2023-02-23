@@ -60,7 +60,7 @@ public class Account {
 		this.balance -= amount;
 	}
 	
-	// Method to validate account withdraw
+	// Method to validate account withdraw when user does an operation 
 	private void validateWithdraw(double amount) {
 		if (amount > getWithdrawLimit()) {
 			throw new BusinessException("Erro de saque: A quantia excede o limite de saque");

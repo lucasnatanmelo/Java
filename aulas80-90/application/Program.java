@@ -11,7 +11,9 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("How many products will exists in the list?\n")
 		int n = sc.nextInt();
+		// Nesse caso, o vect será uma lista de products
 		Product[] vect = new Product[n];
 		
 		for(int i=0; i < vect.length; i++) {
@@ -21,6 +23,7 @@ public class Program {
 			vect[i] = new Product(name, price);
 		}
 		
+		// Retorna a soma de todos os valores dos produtos
 		double sum = 0.0;
 		for(int i=0; i < vect.length; i++) {
 			sum += vect[i].getPrice();

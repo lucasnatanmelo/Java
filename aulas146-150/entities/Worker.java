@@ -72,7 +72,7 @@ public class Worker {
 	public double income(int year, int month) {
 		// Initially, sum will be the base salary
 		double sum = this.baseSalary;
-		// Instace cal as a Calendar Instance
+		// Instancies cal as a Calendar type
 		Calendar cal = Calendar.getInstance();
 		for (HourContract c : contracts) {
 			// get current date

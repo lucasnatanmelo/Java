@@ -9,6 +9,7 @@ public class SavingsAccount extends Account{
 
 	public SavingsAccount(Integer number, String holder, Double balance, Double interestRate) {
 		super(number, holder, balance);
+		// interest Rate = taxa de juro
 		this.interestRate = interestRate;
 	}
 

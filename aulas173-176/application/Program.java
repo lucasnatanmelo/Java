@@ -8,6 +8,10 @@ import java.util.Scanner;
 import model.entities.Reservation;
 import model.exceptions.DomainException;
 
+/*
+	Errors treatments
+*/
+
 public class Program {
 
 	public static void main(String[] args) {

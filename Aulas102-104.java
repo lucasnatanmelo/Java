@@ -2,6 +2,10 @@ package application;
 
 import java.util.Scanner;
 
+/**
+	Matrix lesson
+ */
+
 public class Program {
 
 	public static void main(String[] args) {

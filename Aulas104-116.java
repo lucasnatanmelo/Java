@@ -17,10 +17,12 @@ public class Program {
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
+		// Ways to catch current time
 		LocalDate d01 = LocalDate.now();
 		LocalDateTime d02 = LocalDateTime.now();
 		Instant d03 = Instant.now();
 
+		// Ways to format Date
 		LocalDate d04 = LocalDate.parse("2022-07-20");
 		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
 		Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
@@ -33,6 +35,7 @@ public class Program {
 		LocalDate d10 = LocalDate.of(2022, 07, 20);
 		LocalDateTime d11 = LocalDateTime.of(2022, 07, 20, 1, 30);
 
+		// Ways to print date
 		System.out.println("d01 = " + d01.toString());
 		System.out.println("d02 = " + d02.toString());
 		System.out.println("d03 = " + d03.toString());

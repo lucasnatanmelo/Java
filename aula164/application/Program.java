@@ -25,7 +25,7 @@ public class Program {
 		int n = sc.nextInt();
 		
 		// Loop through list
-		for (int i=1; i<=n; i++) {
+		for (int i = 1; i <= n; i++) {
 			System.out.println("Shape #" + i + " data:");
 			System.out.print("Rectangle or Circle (r/c)? ");
 			char ch = sc.next().charAt(0);

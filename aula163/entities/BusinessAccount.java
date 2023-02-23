@@ -1,5 +1,6 @@
 package entities;
 
+// final -> Impede que a classe seja herdada
 public final class BusinessAccount extends Account{
 	
 	private Double loanLimit;

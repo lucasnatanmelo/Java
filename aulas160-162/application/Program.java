@@ -32,7 +32,7 @@ public class Program {
 		System.out.print("Entre com o numero de produtos: ");
 		int n = sc.nextInt();
 		
-		for (int i=1; i<=n; i++) {
+		for (int i = 1; i <= n; i++) {
 			
 			System.out.println("Datos do produto #" + i + ":");
 			

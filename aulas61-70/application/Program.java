@@ -11,7 +11,11 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		// Instancia um variável product do tipo Product
 		Product product = new Product();
+
+		// Armazena valores para a variável
+		// obs: Nesse exemplo, não estamos utilizando os métodos getters e setters
 		System.out.println("Enter product data: ");
 		System.out.println("Name: ");
 		product.name = sc.nextLine();

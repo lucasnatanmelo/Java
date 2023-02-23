@@ -11,6 +11,7 @@ public class Program {
 		/*
 			Polimorfismo: 
 			O tipo Account assume diversas formas, com diferentes métodos, como SavingsAccount, BusinessAccount
+			Perceba que o número de parâmetros é diferente para cada tipo
 		*/
 		
 		Account acc1 = new Account(1001, "Alex", 1000.0);

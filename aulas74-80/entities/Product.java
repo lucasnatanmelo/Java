@@ -9,6 +9,7 @@ public class Product {
 	// Construtor padrâo - Não recebe parâmetros
 	public Product() {
 		// Caso precise, inicilizar valores
+		// In this case, it starts as null
 	}
 
 	// Construtor da classe - Todos os argumantos

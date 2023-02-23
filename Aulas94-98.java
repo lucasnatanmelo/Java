@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 public class Program {
 	public static void main(String[] args) {
 		
+		// list is a List with type String
 		List<String> list = new ArrayList<>();
 		
 		// add()
@@ -32,6 +33,7 @@ public class Program {
 		System.out.println("---------------------");
 		
 		// remoeIf() -> Remove a partir de uma condição
+		// Nesse caso, todso os nomes que iniciam com 'M'
 		list.removeIf(x -> x.charAt(0) == 'M');
 		
 		for (String x : list) {
@@ -46,7 +48,7 @@ public class Program {
 		
 		System.out.println("---------------------");
 		
-		// Armazena os itens seguindo condições -> Java mais atual
+		// Armazena em result os itens seguindo condições -> Java mais atual
 		List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
 		
 		for (String x : result) {
@@ -55,7 +57,7 @@ public class Program {
 		
 		System.out.println("---------------------");
 		
-		// Encontra o item que satisfaça a primeira condição
+		// Encontra o item que satisfaça a primeira condição e armazena em name
 		String name = list.stream().filter(x -> x.charAt(0) == 'J').findFirst().orElse(null);
 		System.out.println(name);
 	}

@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-// Método de leitura de arquivos
+// Reading files method
 
 public class Program {
 	public static void main(String[] args) {

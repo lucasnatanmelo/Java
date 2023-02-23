@@ -5,6 +5,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		// Instancia sc como uma variável do tipo Scanner
+		// Utilizado para leitura de dados
 		Scanner sc = new Scanner(System.in);
 
 		// Para ler numeros do tipo double
@@ -23,7 +25,6 @@ public class Main {
 		else {
 			System.out.printf("Voce digitou um valor menor que 10: %.2f%n", db);
 		}
-		
 		
 		// Estrutura switch case
 		
@@ -66,20 +67,16 @@ public class Main {
 			System.out.println("Dia invalido!");
 		}
 		
-		
 		// Estrutura de repetição - While
 		
 		int soma = 0;
 		
-		System.out.println("Digite valores para soma, para parar digite -1: ");
-		
-		int value = sc.nextInt();
-		soma += value;
+		int value = 0;
 		
 		while(value != -1) {
 			System.out.println("Digite valores para soma, para parar digite -1: ");
 			value = sc.nextInt();
-			soma += value;
+			if(value != -1){soma += value;};
 		}
 		
 		System.out.println("Resultado da soma - For: " + soma);
@@ -90,16 +87,16 @@ public class Main {
 		
 		int timesToRepeat = 10;
 		for(int i = 0; i < timesToRepeat; i++) {
-			System.out.println("Digite valores para soma, para parar digite -1: ");
+			System.out.println("Digite valores para uma nova soma: ");
 			value = sc.nextInt();
 			soma += value;
 		}
 		
-		System.out.println("Resultado da soma - for: " + soma);
-		
+		System.out.println("Resultado da nova soma - for: " + soma);
 		
 		// Estrutura de repetição Do-While
 		
+		// Locale.US auxilia para recebimento de números com "."
 		Locale.setDefault(Locale.US);
 		
 		char resp;
@@ -113,7 +110,6 @@ public class Main {
 		} while( resp != 'n');
 		
 		sc.close();
-		
 		
 		// Funções para manipulação de strings - Algumas
 		
