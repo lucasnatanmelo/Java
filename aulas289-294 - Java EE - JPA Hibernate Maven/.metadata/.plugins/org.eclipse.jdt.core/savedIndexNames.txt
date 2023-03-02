@@ -1,0 +1,25 @@
+INDEX VERSION 1.131+C:\Users\Lucas Natan\Documents\Projeto - T.I\ws-sts\.metadata\.plugins\org.eclipse.jdt.core
+1252761654.index
+2145270849.index
+1306560271.index
+4053945386.index
+3941830715.index
+1311388581.index
+3366253942.index
+266271735.index
+3969438078.index
+1865797976.index
+2652343847.index
+1841691918.index
+3156324710.index
+1080636472.index
+2587541557.index
+1908827704.index
+3491884925.index
+2263970248.index
+2392246811.index
+485982383.index
+3155152017.index
+2192369683.index
+4208151429.index
+1370008416.index
